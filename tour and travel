@@ -24,20 +24,20 @@ void semienFun();
 int main ()
 {
     returned :
-    	           system("cls");
+    	           cout<<system("cls");
      cout<<"\n                  ============ WELLCOME TO AASTU TOUR AND TRAVEL AGENCY =================\n";
      cout<<endl<<endl;
      cout<<"                            AASTU tour and travel agency gives these tour services\n";
      cout<<endl;
-     cout<<"           1. Reccomended tours : \n";
-     cout<<"           2. Festival tours : \n";
-     cout<<"           3. Tour packeges  : \n";
-     cout<<"           4. others : \n";
+     cout<<"           press no 1 for our Reccomended tours : \n";
+     cout<<"           press 2 for Festival tours : \n";
+     cout<<"           press 3 to see our Tour packeges  : \n";
+     cout<<"           press 4 for others : \n";
      //to  enter the above choices use this variable
      int recNUM;
      cout<<"\n==== Enter there number to continue ====\n";
      cin>>recNUM;
-     system("cls");
+     cout<<system("cls");
      switch(recNUM)
             {
                 case 1:
@@ -51,7 +51,7 @@ int main ()
                       cout<<"\nenter their respective number to check availiability\n";
                             int check;
                                 cin>>check;
-                                system("cls");
+                                cout<<system("cls");
                                 retval=checkAvail(check);
                         if (retval==1)
                                 switchCheck(check);
@@ -242,7 +242,7 @@ void bahirDarFun()
                        	     cin>>contin;
                        	     if (contin==1)
                        	         {
-                       	         	system("cls");
+                       	         	cout<<system("cls");
 					      cout<<"\n 1. information about bahir dar tour\n";
 					      cout<<"\n 2. ticket reservation\n";
 					      cout<<"\n 3. Ticket Cancillation\n";
@@ -261,7 +261,7 @@ void gondarFun()
                        	     cin>>contin;
                        	     if (contin==1)
                        	         {
-                       	         	system("cls");
+                       	         	cout<<system("cls");
 					      cout<<"\n 1. information about gondar tour\n";
 					      cout<<"\n 2. ticket reservation\n";
 					      cout<<"\n 3. Ticket Cancillation\n";
@@ -280,7 +280,7 @@ void axumFun()
                        	     cin>>contin;
                        	     if (contin==1)
                        	         {
-                       	         	system("cls");
+                       	         	cout<<system("cls");
 					      cout<<"\n 1. information about Axum tour\n";
 					      cout<<"\n 2. ticket reservation\n";
 					      cout<<"\n 3. Ticket Cancillation\n";
@@ -299,7 +299,7 @@ void laliFun()
                        	     cin>>contin;
                        	     if (contin==1)
                        	         {
-                       	         	system("cls");
+                       	         	cout<<system("cls");
 					      cout<<"\n 1. information about lalibela tour\n";
 					      cout<<"\n 2. ticket reservation\n";
 					      cout<<"\n 3. Ticket Cancillation\n";
@@ -318,7 +318,7 @@ void semienFun()
                        	     cin>>contin;
                        	     if (contin==1)
                        	         {
-                       	         	system("cls");
+                       	         	cout<<system("cls");
 					      cout<<"\n 1. information about semein mountain r tour\n";
 					      cout<<"\n 2. ticket reservation\n";
 					      cout<<"\n 3. Ticket Cancillation\n";
