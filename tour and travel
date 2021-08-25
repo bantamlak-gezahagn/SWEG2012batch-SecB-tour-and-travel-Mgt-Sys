@@ -1,0 +1,222 @@
+#include <iostream>
+#include<string.h>
+#include<stdlib.h>
+using namespace std;
+      char reccomend1[]="Bhir Dar";
+	char reccomend2[]="Gondar";
+	char reccomend3[]="Axum";
+	char reccomend4[]="Lalibela";
+	char reccomend5[]="Semein mountain";
+	char avail1[]="Axum";
+	char avail2[]="Lalibela";
+	char avail3[]="Gondar";
+int checkAvail(int);
+int main ()
+{
+      //this variable is used to recieve the returned value 
+      int retval;
+    returned :
+    	           system("cls");
+     cout<<"\n                  ============ WELLCOME TO AASTU TOUR AND TRAVEL AGENCY =================\n";
+     cout<<endl<<endl;
+     cout<<"                            AASTU tour and travel agency gives these tour services\n";
+     cout<<endl;
+     cout<<"           1. Reccomended tours : \n";
+     cout<<"           2. Festival tours : \n";
+     cout<<"           3. Tour packeges  : \n";
+     cout<<"           4. others : \n";
+     //to  enter the above choices use this variable
+     int recNUM;
+     cout<<"\n==== Enter there number to continue ====\n";
+     cin>>recNUM;
+     system("cls");
+     switch(recNUM)
+            {
+                case 1:
+                	{
+                           cout<<"=== Reccomended tours are : \n";
+                	         cout<<"1. Bahir Dar\n";
+                           cout<<"2. Gondar\n";
+                           cout<<"3. Axum\n";
+                           cout<<"4. Lalibela\n";
+                           cout<<"5. Semein mauntain\n";
+                      cout<<"\nenter their respective number to check availiability\n";
+                            int check;
+                                cin>>check;
+                                system("cls");
+                                retval=checkAvail(check);
+                                
+                   }
+                }
+                if(retval==1)
+                       {
+                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
+                       	int contin;
+                       	     cin>>contin;
+                       	     if (contin==1)
+                       	         {
+                       	         	system("cls");
+					      cout<<"\n 1. information about bahir dar tour\n";
+					      cout<<"\n 2. ticket reservation\n";
+					      cout<<"\n 3. Ticket Cancillation\n";
+					      cout<<"\n 4. update you entry data\n";
+					    }
+				     else
+				          exit(0);
+			     }
+		    else if(retval==0)
+		           {
+				cout<<"\nif you want to back to main page press 1 to exit press 0\n";
+					//to exit or continue use this variables
+				    int checkerNU; 
+				    cin>>checkerNU;
+					  if (checkerNU==1)
+						{
+						goto returned;
+						}
+					  else
+					      exit(0); 
+			     }
+                         
+             return 0;
+}
+ int checkAvail(int cheNum)
+            {
+	            int returnVAL;
+	                switch(cheNum)
+                                      {
+               	      case 1:
+               		{
+               		      if (strcmp(reccomend1,avail1)==0)
+               		            {
+						      cout<<"Availaible";
+							returnVAL= 1;
+                                    }
+                              else if(strcmp(reccomend1,avail2)==0)
+     		                        {				 
+						cout<<"Availaible";
+						returnVAL= 1;
+                                    }
+     		                  else if(strcmp(reccomend1,avail3)==0)
+     		                        {
+						cout<<"Availaible";
+						returnVAL= 1;
+                                    }
+     		                  else
+     		                        {
+						cout<<"Not Availaible";
+				            returnVAL= 0;
+						}
+     		                        return returnVAL;
+     		                        break;
+					      }
+	            	case 2:
+               		{
+
+               		     if (strcmp(reccomend2,avail1)==0)
+               		            {
+                                          returnVAL= 1;
+							cout<<"Availaible";
+                                    }
+     		                 else if(strcmp(reccomend2,avail2)==0)
+     		                        {
+							returnVAL= 1;
+						      cout<<"Availaible";
+                                    }
+     		                 else if(strcmp(reccomend2,avail3)==0)
+     		                        {
+							returnVAL= 1;
+							cout<<"Availaible";
+                                    }
+     		                 else
+     		                        {
+     		                              returnVAL= 0;
+							cout<<"Not Availaible";
+						}
+     		                                                   
+     		                              return returnVAL;
+     		                              break;
+				}
+                       case 3:
+               		{
+
+               		     if (strcmp(reccomend3,avail1)==0)
+               		            {
+						   returnVAL= 1;
+						   cout<<"Availaible";
+                                    }
+     		                 else if(strcmp(reccomend3,avail2)==0)
+     		                        {
+						   returnVAL= 1;
+						   cout<<"Availaible";
+                                    }
+     		                 else if(strcmp(reccomend3,avail3)==0)
+     		                        {
+						   returnVAL= 1;
+						   cout<<"Availaible";
+                                    }
+     		                 else
+     		                        {
+     		                           returnVAL= 0;
+						   cout<<"Not Availaible";
+						}
+     		                           return returnVAL;
+     		                           break;
+				}
+				case 4:
+               		{
+
+               		     if (strcmp(reccomend4,avail1)==0)
+                                    {
+						  returnVAL= 1;
+						  cout<<"Availaible";
+                                    }
+     		                 else if(strcmp(reccomend4,avail2)==0)
+     		                        {
+						  returnVAL= 1;
+						  cout<<"Availaible";
+                                    }
+     		                 else if(strcmp(reccomend4,avail3)==0)
+     		                        {
+						  returnVAL= 1;
+						  cout<<"Availaible";
+                                    }
+     		                 else
+     		                        {
+						  returnVAL= 0;
+						  cout<<"Not Availaible";
+                                    }
+     		                                                  
+     		                          return returnVAL;
+     		                          break;
+				}
+				case 5:
+               		{
+
+               		    if (strcmp(reccomend5,avail1)==0)
+               		            {
+			                    returnVAL= 1;
+						  cout<<"Availaible";
+                                    }
+     		                else if(strcmp(reccomend5,avail2)==0)
+     		                         {
+     		                            returnVAL= 1;
+						    cout<<"Availaible";
+     		                         }
+     		                else if(strcmp(reccomend5,avail3)==0)
+     		                         {
+						    returnVAL= 1;
+						    cout<<"Availaible";
+                                     }
+     		                else
+     		                         {
+						    returnVAL= 0;
+						    cout<<"Not Availaible";
+                                     }
+     		                                                  
+     		                            return returnVAL;
+     		                            break;
+		            }
+			}
+            }
+
