@@ -10,11 +10,19 @@ using namespace std;
 	char avail1[]="Axum";
 	char avail2[]="Lalibela";
 	char avail3[]="Gondar";
+	//this variable is used to recieve the returned value 
+	int retval;
+	//used to check availability of tour
 int checkAvail(int);
+// used to enter to the detail 
+void switchCheck(int);
+void bahirDarFun();
+void gondarFun();
+void axumFun();
+void laliFun();
+void semienFun();
 int main ()
 {
-      //this variable is used to recieve the returned value 
-      int retval;
     returned :
     	           system("cls");
      cout<<"\n                  ============ WELLCOME TO AASTU TOUR AND TRAVEL AGENCY =================\n";
@@ -45,27 +53,10 @@ int main ()
                                 cin>>check;
                                 system("cls");
                                 retval=checkAvail(check);
-                                
-                   }
-                }
-                if(retval==1)
-                       {
-                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
-                       	int contin;
-                       	     cin>>contin;
-                       	     if (contin==1)
-                       	         {
-                       	         	system("cls");
-					      cout<<"\n 1. information about bahir dar tour\n";
-					      cout<<"\n 2. ticket reservation\n";
-					      cout<<"\n 3. Ticket Cancillation\n";
-					      cout<<"\n 4. update you entry data\n";
-					    }
-				     else
-				          exit(0);
-			     }
-		    else if(retval==0)
-		           {
+                        if (retval==1)
+                                switchCheck(check);
+                        else if(retval==0)
+		                {
 				cout<<"\nif you want to back to main page press 1 to exit press 0\n";
 					//to exit or continue use this variables
 				    int checkerNU; 
@@ -76,10 +67,11 @@ int main ()
 						}
 					  else
 					      exit(0); 
+					}
 			     }
-                         
-             return 0;
-}
+                   }
+                 return 0;
+		    }
  int checkAvail(int cheNum)
             {
 	            int returnVAL;
@@ -220,3 +212,119 @@ int main ()
 			}
             }
 
+void switchCheck(int num)
+{
+	switch(num)
+	{
+		case 1:
+			bahirDarFun();
+			break;
+            case 2:
+            	gondarFun();
+            	break;
+            case 3:
+            	axumFun();
+            	break;
+            case 4:
+            	laliFun();
+            	break;
+            case 5:
+            	semienFun();
+			break;
+	}
+}
+void bahirDarFun()
+{
+	if(retval==1)
+                       {
+                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
+                       	int contin;
+                       	     cin>>contin;
+                       	     if (contin==1)
+                       	         {
+                       	         	system("cls");
+					      cout<<"\n 1. information about bahir dar tour\n";
+					      cout<<"\n 2. ticket reservation\n";
+					      cout<<"\n 3. Ticket Cancillation\n";
+					      cout<<"\n 4. update your entry data\n";
+					    }
+				     else
+				          exit(0);
+			     }
+}
+void gondarFun()
+{
+	if(retval==1)
+                       {
+                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
+                       	int contin;
+                       	     cin>>contin;
+                       	     if (contin==1)
+                       	         {
+                       	         	system("cls");
+					      cout<<"\n 1. information about gondar tour\n";
+					      cout<<"\n 2. ticket reservation\n";
+					      cout<<"\n 3. Ticket Cancillation\n";
+					      cout<<"\n 4. update your entry data\n";
+					    }
+				     else
+				          exit(0);
+			     }
+}
+void axumFun()
+{
+	if(retval==1)
+                       {
+                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
+                       	int contin;
+                       	     cin>>contin;
+                       	     if (contin==1)
+                       	         {
+                       	         	system("cls");
+					      cout<<"\n 1. information about Axum tour\n";
+					      cout<<"\n 2. ticket reservation\n";
+					      cout<<"\n 3. Ticket Cancillation\n";
+					      cout<<"\n 4. update your entry data\n";
+					    }
+				     else
+				          exit(0);
+			     }
+}
+void laliFun()
+{
+	if(retval==1)
+                       {
+                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
+                       	int contin;
+                       	     cin>>contin;
+                       	     if (contin==1)
+                       	         {
+                       	         	system("cls");
+					      cout<<"\n 1. information about lalibela tour\n";
+					      cout<<"\n 2. ticket reservation\n";
+					      cout<<"\n 3. Ticket Cancillation\n";
+					      cout<<"\n 4. update your entry data\n";
+					    }
+				     else
+				          exit(0);
+			     }
+}
+void semienFun()
+{
+	if(retval==1)
+                       {
+                       	cout<<"\nif you want to continue enter 1 to exit press 0\n";
+                       	int contin;
+                       	     cin>>contin;
+                       	     if (contin==1)
+                       	         {
+                       	         	system("cls");
+					      cout<<"\n 1. information about semein mountain r tour\n";
+					      cout<<"\n 2. ticket reservation\n";
+					      cout<<"\n 3. Ticket Cancillation\n";
+					      cout<<"\n 4. update your entry data\n";
+					    }
+				     else
+				          exit(0);
+			     }
+}
